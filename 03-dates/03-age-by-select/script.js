@@ -12,16 +12,11 @@
 (function() {
 
     // your code here
-    let day = document.getElementById("dob-day")
-    let month = document.getElementById("dob-month")
     let year = document.getElementById("dob-year")
-
     let button = document.querySelector( 'button');
 
     button.onclick = function () {
-        let age = 2022 - year.value
-        alert(age)
-        // alert("birthdate: " + day.value + month.value + year.value)
+        alert(2022 - year.value)
     }
 
 })();
