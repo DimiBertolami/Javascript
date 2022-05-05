@@ -17,7 +17,6 @@
     const d = new Date();
     let hours = d.getHours()
     let minutes = d.getMinutes()
-    // console.log("time: " + hours + ":" + minutes)
     alert("time: " + hours + ":" + minutes)
      if (hours>=18){
          document.getElementById("target").innerHTML = "goodbye"
