@@ -12,11 +12,11 @@
 (function () {
 
     // your code here
-    const dayToLookFor = 13;
-    let target = document.getElementById('target');
-    const run = document.getElementById('run');
-    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    let yr = document.getElementById('year');
+    const day       = 13;
+    const run       = document.getElementById('run');
+    let yr          = document.getElementById('year');
+    const months    = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
     run.addEventListener('click', setTarget);
 
     let date = new Date();
@@ -24,7 +24,7 @@
         let year = yr.value;
         let hasThe13th = [];
         date.setFullYear(year);
-        date.setDate(dayToLookFor);
+        date.setDate(day);
         for (month = 0; month < months.length; month++) {
             date.setMonth(month)
             if (date.getDay() === 5) {hasThe13th.push(months[month])}
@@ -32,5 +32,4 @@
         let response = "In: " + year + " ";
         for (i = 0; i < hasThe13th.length; i++) {alert(hasThe13th[i] + " Has a Friday the 13th")}
     }
-
 })();
