@@ -88,5 +88,5 @@
             age: 81,
         },
     ];
-    document.getElementById("run").addEventListener("click", () => console.log("sum of all ages is " + people.reduce((previous, current) => previous + current.age, 0)));
+    document.getElementById("run").addEventListener("click", () => console.log("The sum of all ages is " + people.reduce((previous, current) => previous + current.age, 0)));
 })();
