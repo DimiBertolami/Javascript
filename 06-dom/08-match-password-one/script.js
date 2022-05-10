@@ -12,12 +12,17 @@
 (function() {
 
     // your code here
-    let passOne = document.getElementById("pass-one").value
-    let passTwo = document.getElementById("pass-two").value
-    if (passOne!==passTwo){
-        let pone = document.querySelector("pass-one");
-        let ptwo =document.querySelector("pass-two");
-        pone.setAttribute("bgcolor", "red");
-        ptwo.setAttribute("color", "green");
-    }
+    document.getElementById("run").addEventListener("click", () => {
+        let passOne = document.getElementById("pass-one");
+        let passTwo = document.getElementById("pass-two");
+
+        if (passOne.value !== passTwo.value){
+            passOne.style.borderColor = "red";
+            passTwo.style.borderColor = "red";
+        } else {
+            passOne.style.borderColor = "white";
+            passTwo.style.borderColor = "white";
+        }
+    })
 })();
+
