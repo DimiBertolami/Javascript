@@ -19,17 +19,17 @@
 
                 data.heroes.forEach(hero => {
 
-                    const clone = tElement.content.cloneNode(true);
+                    const bCloneNode = tElement.content.cloneNode(true);
 
-                    const nElement = clone.querySelector(".name")
-                    const aElement = clone.querySelector(".alter-ego");
-                    const pElement = clone.querySelector(".powers");
+                    const eName = bCloneNode.querySelector(".name")
+                    const eAlterEgo = bCloneNode.querySelector(".alter-ego");
+                    const ePowers = bCloneNode.querySelector(".powers");
 
-                    nElement.innerText = hero.name;
-                    aElement.innerText = hero.alterEgo;
-                    pElement.innerText = hero.abilities.join('. ') + '.';
+                    eName.innerText = hero.name;
+                    eAlterEgo.innerText = hero.alterEgo;
+                    ePowers.innerText = hero.abilities.join('. ') + '.';
 
-                    document.getElementById("target").appendChild(clone);
+                    document.getElementById("target").appendChild(bCloneNode);
 
                 })
             });
