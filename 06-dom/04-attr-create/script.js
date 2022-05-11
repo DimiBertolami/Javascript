@@ -21,4 +21,3 @@
     console.log(elSource);                                                          // to prove element is still there
     elSource.remove()                                                               // remove from DOM
 })();
- 
