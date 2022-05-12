@@ -29,14 +29,14 @@ function main(){
         y--;
     }
     movePlayer(x, y);
-    setTimeout(main, 50);
+    setTimeout(main, 20);
 }
 
 main();
 
 function movePlayer(x, y){
     let moveXY = document.getElementById("ReadyPlayerOne");
-    moveXY.offsetLeft = 20;
-    moveXY.style.left = x++;
-    moveXY.style.top = y++;
+    console.log("x: " + x + " y: " + y);
+    moveXY.style.left = x + "px";
+    moveXY.style.top  = y + "px";
 }
